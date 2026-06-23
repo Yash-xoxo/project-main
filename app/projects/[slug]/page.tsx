@@ -37,6 +37,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   const relatedProjects = projects.filter((p) => p.id !== project.id).slice(0, 3);
+  const demoUrl = project.demoUrl && project.demoUrl !== "#" ? project.demoUrl : null;
 
   return (
     <div className="min-h-screen bg-background">
@@ -66,16 +67,16 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 {project.category}
               </span>
             </div>
-            <div className="flex items-start justify-between gap-6 mb-4">
-              <h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight">
+            <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-4">
+              <h1 className="text-5xl md:text-6xl font-bold text-foreground leading-tight min-w-0">
                 {project.title}
               </h1>
-              {project.demoUrl && project.demoUrl !== "#" && (
+              {demoUrl && (
                 <a
-                  href={project.demoUrl}
+                  href={demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-all whitespace-nowrap group mt-2"
+                  className="inline-flex items-center gap-2 self-start lg:self-auto px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-all whitespace-nowrap group lg:mt-2 lg:flex-shrink-0"
                 >
                   <ExternalLink size={18} />
                   <span>Demo</span>

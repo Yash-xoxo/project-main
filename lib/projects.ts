@@ -82,7 +82,7 @@ export const projects: Project[] = [
     ],
     role: "Infrastructure Architect & Self-Hosted Systems Engineer",
     images: [],
-    demoUrl: "https://yashx.space",
+    demoUrl: "https://proxmox.yashx.space",
   },
   {
     id: "2",
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     ],
     role: "Automation Engineer & AI Pipeline Developer",
     images: [],
-    demoUrl: "#",
+    demoUrl: "https://n8n.yashx.space",
   },
   {
     id: "3",
@@ -189,7 +189,7 @@ export const projects: Project[] = [
     ],
     role: "Full-Stack Engineer & DevOps Lead",
     images: [],
-    demoUrl: "#",
+    demoUrl: "https://container.yashx.space",
   },
   {
     id: "4",
@@ -243,7 +243,7 @@ export const projects: Project[] = [
     ],
     role: "Cloud Infrastructure Engineer & Kubernetes Specialist",
     images: [],
-    demoUrl: "#",
+    demoUrl: "https://kubernetes.yashx.space",
   },
   {
     id: "5",
@@ -296,7 +296,7 @@ export const projects: Project[] = [
     ],
     role: "DevOps Engineer & Release Automation Specialist",
     images: [],
-    demoUrl: "#",
+    demoUrl: "https://pipline.yashx.space",
   },
   {
     id: "6",
@@ -358,6 +358,6 @@ export const projects: Project[] = [
     ],
     role: "AI/ML Engineer & Offline Infrastructure Specialist",
     images: [],
-    demoUrl: "#",
+    demoUrl: "https://llm.yashx.space",
   },
 ];
